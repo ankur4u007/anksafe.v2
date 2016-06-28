@@ -1,7 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+mainClassName = 'ank.Main'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 version = '1.0'
 
 jar {
@@ -13,4 +17,16 @@ jar {
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-core:4.3.0.RELEASE'
+}
+
+jar {
+    baseName = 'anksafe'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.13'
 }

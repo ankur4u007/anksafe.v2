@@ -1,2 +1,2 @@
 # anksafe.v2
-Version 2 of encyptor Program
+Version 2 of encryptor Program
